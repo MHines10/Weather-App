@@ -10,7 +10,7 @@ let searchButton = document.getElementById("search-button");
 async function getWeather() {
   // Get the city or zip code input from the user
   let city = cityInput.value;
-  let url = '';
+  var url;
   // Check if the input is a city name or a zip code
   if (isNaN(city)) {
     // If it is a city name, get the weather data for that city
