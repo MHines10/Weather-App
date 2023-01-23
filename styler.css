@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+    background-image: url('images/weatherappui2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+/* Navbar */
+
+.navbar{
+    position: absolute;
+    width: 1270px;
+    height: 82px;
+    left: 35px;
+    top: 0px;
+    background: #465962;
+    background: -moz-linear-gradient(top, #d17428 0%, #16222f 100%);
+    background: -webkit-linear-gradient(top, #465962 0%, #16222f 100%);
+    background: linear-gradient(to bottom, #d17428 0%, #16222f 100%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Weather Express logo on navbar*/
+.navlogo {
+    width: 73px;
+    height: 73px;
+    background: url("./images/weatherlogo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
+  /* Weather Express Header */
+  .nav-head {
+    width: 409px;
+    color: rgb(225, 225, 225);
+    position: absolute;
+    top: 10px;
+    left: 775px;
+    font-family: Luxurious Roman;
+    font-weight: Regular;
+    font-size: 48px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  /* Search Bar Style */
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 383px;
+    height: 41px;
+    left: 161px;
+    top: 160px;
+    background: rgba(214, 116, 58, 0.534);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px 0px;
+  }
+
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 161px;
+    top: 160px;
+    background: rgba(255, 111, 28, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px 0px;
+  }
+
+/* Search Bar User-Input */
+#city-input {
+    font-size: 20px;
+    font-family: Luxurious Roman;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    text-align: center;
+}
+
+/* Search Button */
+#search-button {
+    font-size: 20px;
+    font-family: Lucida Handwriting;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    color: white;
+    border: none;
+  }
+
+#search-button:hover {
+    color: rgba(18,33,42,255);
+    text-shadow: 1px 0px 0px rgb(154, 154, 154);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Search Bar Text-Field Placeholder */
+#city-input::placeholder {
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+
+/* Weather Result Positioning */
+
+/* City Name */
+#city {
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #222222;
+    font-size: 60px;
+    font-weight: regular;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 300px;
+    right: 650px;
+    left: 200px;
+    position: absolute;
+}
+
+/* Current Temperature */
+#temp{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 25px 10px #222222;
+    font-size: 120px;
+    font-weight: bold;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 500px;
+    right: 650px;
+    left: 250px;
+    position: absolute;
+}
+
+/* Feels Like Temperature */
+#feels-like{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #222222;
+    font-size: 40px;
+    font-weight: regular;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 205px;
+    bottom:  10px;
+    left: 700px;
+    position: absolute;
+}
+
+/* Temperature High */
+#high{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #222222;
+    font-size: 35px;
+    font-weight: regular;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 350px;
+    bottom:  10px;
+    left: 700px;
+    position: absolute;
+}
+
+/* Temperature Low */
+#low{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #222222;
+    font-size: 35px;
+    font-weight: regular;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 480px;
+    bottom:  10px;
+    left: 700px;
+    position: absolute;
+}
+
+/* Sky Forecast */
+#sky{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #222222;
+    font-size: 60px;
+    font-weight: regular;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 775px;
+    right: 650px;
+    left: 250px;
+    position: absolute;
+}
+
+/* Forecast Description */
+#desc{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 1px 3px 0 #000000, 1px 13px 5px #222222;
+    font-size: 20px;
+    font-weight: regular;
+    font-family: Lucida Handwriting;
+    margin: 0;
+    top: 640px;
+    bottom:  10px;
+    left: 695px;
+    position: absolute; 
+}
+
+/* Weather Forecast Icon */
+#icon{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 700px;
+    left: 500px;
+}
+
+/* Weather Express Logo - Bottom Right */
+.we-logo {
+    width: 230px;
+    height: 295px;
+    background: url("./images/weatherlogo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.20000000298023224;
+    position: absolute;
+    top: 600px;
+    left: 1038px;
+    border: 1px solid rgba(0,0,0,1);
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    overflow: hidden;
+  }
+
+
+/* Fade-In Animations */
+
+#city {
+    animation: fadeInOut 2s ease-in-out;
+}
+
+
+#temp {
+    animation: fadeInOut 2.5s ease-in-out;
+}
+
+#sky {
+
+    animation: fadeInOut 3s ease-in-out;
+}
+
+#feels-like {
+    animation: fadeInOut 3.5s ease-in-out;
+}
+
+#high {
+    animation: fadeInOut 4s ease-in-out;
+}
+
+#low {
+    animation: fadeInOut 4.5s ease-in-out;
+}
+
+#desc {
+    animation: fadeInOut 5s ease-in-out;
+}
+
+#icon{
+    animation: fadeInOut 3.3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
