@@ -1,4 +1,4 @@
-# WeatherExpress
+# WeatherEXPRESS
 
 Created a Weather Browser App with HTML, CSS and JavaScript using the openWeather API
 
